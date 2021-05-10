@@ -25,13 +25,18 @@ export function renderMealKit(mealKit) {
 
     const h3 = document.createElement('h3');
     h3.textContent = mealKit.name;
-    h3.style.textDecoration = "underline";
+    h3.style.textDecoration = 'underline';
     li.appendChild(h3);
 
     const img = document.createElement('img');
     img.src = `../assets/${mealKit.image}`;
     img.alt = `${mealKit.name} image`;
     li.appendChild(img);
+
+    const descriptionP = document.createElement('p');
+    descriptionP.classList.add('description');
+    descriptionP.textContent = `${mealKit.description}`;
+    li.append(descriptionP);
 
     const p = document.createElement('p');
     p.classList.add('price');

@@ -27,6 +27,11 @@ h1 {
     font-size: 4rem;
 }
 
+img {
+    height: 200px;
+    width: 200px;
+}
+
 .title-image {
     display: flex;
     justify-content: center;
@@ -35,4 +40,10 @@ h1 {
 .title-page {
     text-align: center;
     font-size: 2rem;
+}
+
+
+
+li {
+    border: solid black 1px;
 }
