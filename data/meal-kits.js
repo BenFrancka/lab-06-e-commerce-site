@@ -55,8 +55,18 @@ const pizza = {
     image : 'pizza.png',
     description: 'Detroit style deep dish pizza, includes dough kit, sauce, buffalo mozzarella, and aged pepperoni',
     category: 'American/Italian',
-    price: 35.00,
-    cost: 9.50
+    price: 25.00,
+    cost: 6.00
+};
+
+const tacos = {
+    id: 'tacos',
+    name: 'Veggie Tacos',
+    image : 'tacos.png',
+    description: 'Corn tortillas, fire-roasted salsa, zuchinni, nopalitos, mushrooms, lime, and fresh cilantro',
+    category: 'Mexican',
+    price: 18.50,
+    cost: 5.75
 };
 
 const mealKits = [
@@ -65,7 +75,8 @@ const mealKits = [
     burger,
     ramen,
     sushi,
-    pizza
+    pizza,
+    tacos
 ];
 
 export default mealKits;
