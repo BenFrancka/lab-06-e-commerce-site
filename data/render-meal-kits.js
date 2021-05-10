@@ -25,6 +25,7 @@ export function renderMealKit(mealKit) {
 
     const h3 = document.createElement('h3');
     h3.textContent = mealKit.name;
+    h3.style.textDecoration = "underline";
     li.appendChild(h3);
 
     const img = document.createElement('img');

@@ -1,7 +1,7 @@
 
 const enchiladas = {
     id: 'enchiladas',
-    name: 'chicken enchiladas',
+    name: 'Chicken Enchiladas',
     image : 'enchiladas.png',
     description: 'Blue corn tortillas with pulled chicken, chile verde sauce, cotija cheese, and fresh cilantro',
     category: 'Mexican',
