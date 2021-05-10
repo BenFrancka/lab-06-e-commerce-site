@@ -34,9 +34,12 @@ export function renderMealKit(mealKit) {
 
     const p = document.createElement('p');
     p.classList.add('price');
-    p.textContent = `$${mealKit.price.value.toFixed(2)}`;
+    p.textContent = `Price: $${mealKit.price.toFixed(2)}`;
 
     const btn = document.createElement('button');
     btn.textContent = 'Add to Cart';
     btn.value = `${mealKit.id}`;
+    p.append(btn);
+    li.append(p);
+    return li;
 }

@@ -57,4 +57,4 @@ const mealKits = [
     sushi
 ];
 
-export defualt mealKits;
+export default mealKits;
