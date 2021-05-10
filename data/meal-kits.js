@@ -69,6 +69,7 @@ const tacos = {
     cost: 5.75
 };
 
+//Array of above objects
 const mealKits = [
     enchiladas, 
     spaghetti,
