@@ -49,12 +49,23 @@ const sushi = {
     cost: 9.50
 };
 
+const pizza = {
+    id: 'pizza',
+    name: 'Pepperoni Pizza',
+    image : 'pizza.png',
+    description: 'Detroit style deep dish pizza, includes dough kit, sauce, buffalo mozzarella, and aged pepperoni',
+    category: 'American/Italian',
+    price: 35.00,
+    cost: 9.50
+};
+
 const mealKits = [
     enchiladas, 
     spaghetti,
     burger,
     ramen,
-    sushi
+    sushi,
+    pizza
 ];
 
 export default mealKits;

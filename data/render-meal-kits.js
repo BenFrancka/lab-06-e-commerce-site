@@ -28,6 +28,11 @@ export function renderMealKit(mealKit) {
     h3.style.textDecoration = 'underline';
     li.appendChild(h3);
 
+    const categoryP = document.createElement('p');
+    categoryP.classList.add('cuisine-type');
+    categoryP.textContent = `Cusuine Type: ${mealKit.category}`;
+    li.appendChild(categoryP);
+
     const img = document.createElement('img');
     img.src = `../assets/${mealKit.image}`;
     img.alt = `${mealKit.name} image`;

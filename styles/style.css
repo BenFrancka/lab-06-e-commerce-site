@@ -25,6 +25,7 @@ body {
 h1 {
     text-align: center;
     font-size: 4rem;
+    font-weight: bold;
 }
 
 img {
@@ -42,8 +43,3 @@ img {
     font-size: 2rem;
 }
 
-
-
-li {
-    border: solid black 1px;
-}
