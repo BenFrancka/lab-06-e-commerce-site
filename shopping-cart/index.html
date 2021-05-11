@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/home.css">
     <link rel="stylesheet" href="../styles/products.css">
+    <link rel="stylesheet" href="../styles/shopping-cart.css">
     <title>Document</title>
 </head>
 
@@ -16,18 +17,33 @@
     </h1>
     
     <h2>
-        (All meal kits feed 2 People)
+        Your Meal Cart
     </h2>
     <h2>
         <a href="../index.html">Return to Main Page</a>
-        <a href="../shopping-cart/index.html">Go to Your Cart </href>
+        <a href="../data/index.html">Continue Shopping</a>
     </h2>
 
     <!--ul will contain the product iterrations-->
-    <ul id = "meal-kit">
-    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Meal Kit</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
 
-    <script type="module" src="./product-page.js"></script>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total:</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script type="module" src="./shopping-cart.js"></script>
 
 </body>
 
