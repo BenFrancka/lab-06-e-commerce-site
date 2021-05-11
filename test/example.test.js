@@ -1,9 +1,10 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { findById} from '../utils.js';
+import { findById, calcItemTotal, calcOrderTotal } from '../utils.js';
 
 const test = QUnit.test;
 
+//example test setup
 test('time to test a function', (expect) => {
     //Arrange
     // Set up your arguments and expectations
@@ -19,7 +20,7 @@ test('time to test a function', (expect) => {
 });
 
 
-// Data to test findById function
+// meal kit data
 const sushi = {
     id: 'sushi',
     name: 'Spicy Tuna Rolls',
@@ -57,6 +58,23 @@ const mealKits = [
     tacos
 ];
 
+//cart item data
+const item3 = {
+    id: 'sushi',
+    amount: 4
+};
+
+const item4 = {
+    id: 'tacos',
+    amount: 3
+};
+
+const cartItems = [
+    item3,
+    item4
+];
+
+
 //findById function test for expected
 test('takes in mealKits array and tacos id, returns tacos item', (expect) => {
 
@@ -75,5 +93,36 @@ test('takes in mealKits array and tacos id, returns tacos item', (expect) => {
     const actual = findById(mealKits, 'burritos');
 
     expect.deepEqual(actual, expected);
+});
+
+
+
+//calcItemTotal test
+test('tests for an amount of 3 and a price of 4, returns twelve', (expect) => {
+    //Arrange
+    // Set up your arguments and expectations
+    const expected = 12;
+    
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const actual = calcItemTotal(3, 4);
+
+    //Expect
+    // Make assertions about what is expected versus the actual result
+    expect.equal(actual, expected);
+});
+
+test('tests for an amount of 3 and a price of 4, returns twelve', (expect) => {
+    //Arrange
+    // Set up your arguments and expectations
+    const expected = 25;
+    
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const actual = calcItemTotal(5, 5);
+
+    //Expect
+    // Make assertions about what is expected versus the actual result
+    expect.equal(actual, expected);
 });
 
