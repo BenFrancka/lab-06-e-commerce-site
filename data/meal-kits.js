@@ -9,7 +9,7 @@ const enchiladas = {
     cost: 4.50
 };
 
-const spaghetti= {
+const spaghetti = {
     id: 'spaghetti',
     name: 'Spaghetti with Pork Meatballs',
     image : 'spaghetti-and-meatballs.png',
