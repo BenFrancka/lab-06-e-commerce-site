@@ -13,6 +13,6 @@ for (let item of cartItems) {
 }
 
 const cartTotal = calcOrderTotal();
-console.log(cartTotal)
+
 total.textContent = `Grand Total: $${cartTotal.toFixed(2)}`;
 total.classList.add('total-display');

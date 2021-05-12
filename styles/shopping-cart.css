@@ -14,6 +14,9 @@ td {
     border: solid black 1px;
 }
 
+.cart-header {
+    background-color: rgba(112, 128, 144, 0.5);
+}
 .total-column {
     background-color: slategrey;
     color: snow;
@@ -30,6 +33,5 @@ td {
     font-size: 3rem;
     float: right;
     border-radius: 50%;
-    border:  ;
     padding: 20px;
 }
