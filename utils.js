@@ -1,5 +1,5 @@
-import mealKits from  './data/meal-kits';
-import cartItems from './data/cart';
+import mealKits from './data/meal-kits.js';
+import cartItems from './data/cart.js';
 
 export function findById(someArray, id) {
     for (let item of someArray) {
@@ -23,7 +23,7 @@ export function calcOrderTotal() {
     for (let item of cartItems) {
         const mealKit = findById(mealKits, item.id);
 
-        const total = item.quantity * mealKit.price;
+        const total = item.amount * mealKit.price;
 
         accumulator = accumulator + total;
     }

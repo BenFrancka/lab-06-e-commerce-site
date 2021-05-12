@@ -12,20 +12,21 @@
 </head>
 
 <body>
-    <h1 class= "meal-menu-header">
-        Dinners R Us Meal Kits 
-    </h1>
+    <div class= "cart-header">
+        <h1 class= "meal-menu-header">
+            Dinners R Us Meal Kits 
+        </h1>
+        
+        <h2>
+            Your Meal Cart
+        </h2>
+        <h2>
+            <a href="../index.html">Return to Main Page</a>
+            <a href="../data/index.html">Continue Shopping</a>
+        </h2>
+    </div>
     
-    <h2>
-        Your Meal Cart
-    </h2>
-    <h2>
-        <a href="../index.html">Return to Main Page</a>
-        <a href="../data/index.html">Continue Shopping</a>
-    </h2>
-
-    <!--ul will contain the product iterrations-->
-    <table>
+    <table class= "shopping-cart">
         <thead>
             <tr>
                 <th>Meal Kit</th>
@@ -35,20 +36,21 @@
             </tr>
         </thead>
         <tbody>
-
+            <!--table rows will be generated here-->
         </tbody>
         <tfoot>
             <tr>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
+                <td id= "cart-total"></td>
             </tr>
         </tfoot>
     </table>
-
-    <button>Place Order</button>
-
+    
+    <div class= "button-area">
+        <button class= "order-button">PlaceOrder</button>
+    </div>
     <script type="module" src="./shopping-cart.js"></script>
 
 </body>

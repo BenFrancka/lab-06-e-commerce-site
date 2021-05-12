@@ -1,5 +1,35 @@
 table {
+    width: 100%;
     font-size: 2rem;
-    display: flex;
     border: solid black 1px;
+}
+
+th {
+    border: solid black 1px;
+    background-color: black;
+    color: snow;
+}
+
+td {
+    border: solid black 1px;
+}
+
+.total-column {
+    background-color: slategrey;
+    color: snow;
+}
+
+.total-display {
+    background-color: steelblue;
+    color: snow;
+}
+
+.order-button {
+    background-color: blue;
+    color: whitesmoke;
+    font-size: 3rem;
+    float: right;
+    border-radius: 50%;
+    border:  ;
+    padding: 20px;
 }
