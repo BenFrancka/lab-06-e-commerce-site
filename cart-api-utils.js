@@ -5,7 +5,7 @@ import { findById } from './utils.js';
 const MEAL = 'MEAL';
 
 //function for getting MEAL from Local Storage and return it to an array
-function getCart() {
+export function getCart() {
 
     //gets stringified MEAL from local storage
     const cartString = localStorage.getItem(MEAL);
@@ -24,7 +24,7 @@ function getCart() {
 }
 
 //function to set MEAL in Local Storage and stringify its array
-function setCart(userCart) { //takes in a cart as a parameter
+export function setCart(userCart) { //takes in a cart as a parameter
     
     //stringify said cart as a variable
     const cartString = JSON.stringify(userCart);
@@ -33,7 +33,7 @@ function setCart(userCart) { //takes in a cart as a parameter
 }
 
 //function that adds items to the shopping cart
-function addItemtoCart(mealId) { //takes in a product id as a parameter
+export function addItemtoCart(mealId) { //takes in a product id as a parameter
 
     //call the get cart from local storage function to get the cart, store as variable
     const shoppingCart = getCart();
