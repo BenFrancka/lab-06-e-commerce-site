@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { findById, calcItemTotal, calcOrderTotal } from '../utils.js';
+import { findById, calcItemTotal } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -58,21 +58,6 @@ const mealKits = [
     tacos
 ];
 
-//cart item data
-const item3 = {
-    id: 'sushi',
-    amount: 4
-};
-
-const item4 = {
-    id: 'tacos',
-    amount: 3
-};
-
-const cartItems = [
-    item3,
-    item4
-];
 
 
 //findById function test for expected

@@ -1,6 +1,6 @@
 //Data
 import mealKits from '../data/meal-kits.js';
-import cartItems from '../data/cart.js';
+//import cartItems from '../data/cart.js';
 
 //function to access quanity data
 import { findById, calcItemTotal } from '../utils.js';

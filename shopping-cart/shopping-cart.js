@@ -1,5 +1,5 @@
 import { calcOrderTotal } from '../utils.js';
-import { renderCartItem } from '../shopping-cart/render-line-items.js'
+import { renderCartItem } from '../shopping-cart/render-line-items.js';
 import cartItems from '../data/cart.js';
 
 const anchor = document.querySelector('tbody');
