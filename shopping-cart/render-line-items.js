@@ -1,7 +1,7 @@
 //Data
 import mealKits from '../data/meal-kits.js';
 //imports getCart function to get cart from local storage
-import { getCart } from '../cart-api-utils.js';
+//import { getCart } from '../cart-api-utils.js';
 
 //function to access quanity data
 import { findById, calcItemTotal } from '../utils.js';

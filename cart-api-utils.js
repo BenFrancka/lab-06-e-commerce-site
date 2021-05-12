@@ -33,7 +33,7 @@ export function setCart(userCart) { //takes in a cart as a parameter
 }
 
 //function that adds items to the shopping cart
-export function addItemtoCart(mealId) { //takes in a product id as a parameter
+export function addItemToCart(mealId) { //takes in a product id as a parameter
 
     //call the get cart from local storage function to get the cart, store as variable
     const shoppingCart = getCart();

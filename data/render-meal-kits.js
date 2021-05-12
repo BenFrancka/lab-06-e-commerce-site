@@ -1,3 +1,6 @@
+//imports addItemToCart function for use in add to cart button click event
+import { addItemToCart } from '../cart-api-utils.js';
+
 export function renderMealKit(mealKit) {
    
     //creates the li
@@ -41,5 +44,12 @@ export function renderMealKit(mealKit) {
     btn.value = `${mealKit.id}`;
     p.append(btn);
     li.append(p);
+
+    //adds event listener to add clicked meal kit to cart
+    btn.addEventListener('click', () =>{
+        //call addItemToCart with mealKit.id to store in cart
+        addItemToCart(mealKit.id);
+    });
+    
     return li;
 }
