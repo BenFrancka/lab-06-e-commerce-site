@@ -1,0 +1,38 @@
+table {
+    width: 100%;
+    font-size: 2rem;
+    border: solid black 1px;
+}
+
+th {
+    border: solid black 1px;
+    background-color: black;
+    color: snow;
+}
+
+td {
+    border: solid black 1px;
+}
+
+.cart-header {
+    background-color: rgba(112, 128, 144, 0.5);
+}
+
+.total-column {
+    background-color: slategrey;
+    color: snow;
+}
+
+.total-display {
+    background-color: steelblue;
+    color: snow;
+}
+
+.order-button {
+    background-color: blue;
+    color: whitesmoke;
+    font-size: 3rem;
+    float: right;
+    border-radius: 50%;
+    padding: 20px;
+}
