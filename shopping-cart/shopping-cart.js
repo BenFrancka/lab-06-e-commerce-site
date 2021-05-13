@@ -21,3 +21,32 @@ const cartTotal = calcOrderTotal();
 
 total.textContent = `Grand Total: $${cartTotal.toFixed(2)}`;
 total.classList.add('total-display');
+
+//grabs order button from HTML
+const orderButton = document.querySelector('#place-order-button');
+
+//disable button if no items are in the cart
+if (cartItems === []) {
+    orderButton.disabled = true;    
+}
+
+//creates event listener for order button
+orderButton.addEventListener('click', () => {
+    
+    //alert with contents of the cart
+    const checkoutAlert = JSON.stringify(cartItems, true, 2);
+    alert(`Your cart contains ${checkoutAlert}`);
+
+    //removes cart from local storage
+    alert('Place Your Order?');
+    localStorage.clear();
+    location.reload();
+    return;
+    //redirect user to homepage
+    
+});
+
+
+
+//removes the cart from local storage
+//redirects user to the home page
