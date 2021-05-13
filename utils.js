@@ -1,5 +1,7 @@
 import mealKits from './data/meal-kits.js';
-import cartItems from './data/cart.js';
+
+//imports getCart to get cart from Local Storage
+import { getCart } from './cart-api-utils.js';
 
 export function findById(someArray, id) {
     for (let item of someArray) {
@@ -19,6 +21,9 @@ export function calcItemTotal(quantity, price) {
 
 export function calcOrderTotal() {
     let accumulator = 0;
+
+    //sets cartItems as cart data from Local Storage
+    const cartItems = getCart();
 
     for (let item of cartItems) {
         const mealKit = findById(mealKits, item.id);
