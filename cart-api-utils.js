@@ -59,3 +59,7 @@ export function addItemToCart(mealId) { //takes in a product id as a parameter
     setCart(shoppingCart);
 }
 
+export function clearCart() {
+    localStorage.clear();
+    location.reload();
+}
