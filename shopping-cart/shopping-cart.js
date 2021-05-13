@@ -26,7 +26,7 @@ total.classList.add('total-display');
 const orderButton = document.querySelector('#place-order-button');
 
 //disable button if no items are in the cart
-if (cartItems === []) {
+if (cartItems.length === 0) {
     orderButton.disabled = true;    
 }
 
@@ -35,18 +35,18 @@ orderButton.addEventListener('click', () => {
     
     //alert with contents of the cart
     const checkoutAlert = JSON.stringify(cartItems, true, 2);
-    alert(`Your cart contains ${checkoutAlert}`);
+    alert(`Your Meal Cart contains ${checkoutAlert}`);
 
     //removes cart from local storage
     alert('Place Your Order?');
     localStorage.clear();
     location.reload();
-    return;
+    
     //redirect user to homepage
+    alert('Return to Home Page');
+    window.location.href = "../index.html";
     
 });
 
 
 
-//removes the cart from local storage
-//redirects user to the home page
