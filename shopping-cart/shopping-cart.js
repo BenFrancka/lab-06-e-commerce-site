@@ -2,7 +2,7 @@ import { calcOrderTotal } from '../utils.js';
 import { renderCartItem } from '../shopping-cart/render-line-items.js';
 
 //imports getCart funciton to replace static cart data
-import { getCart } from '../cart-api-utils.js';
+import { getCart, clearCart } from '../cart-api-utils.js';
 
 const anchor = document.querySelector('tbody');
 const total = document.querySelector('#cart-total');
@@ -39,8 +39,7 @@ orderButton.addEventListener('click', () => {
 
     //removes cart from local storage
     alert('Place Your Order?');
-    localStorage.clear();
-    location.reload();
+    clearCart();
     
     //redirect user to homepage
     alert('Return to Home Page');

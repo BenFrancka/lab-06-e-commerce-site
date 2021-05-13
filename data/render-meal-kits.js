@@ -3,47 +3,48 @@ import { addItemToCart } from '../cart-api-utils.js';
 
 export function renderMealKit(mealKit) {
    
-    //creates the li
+    //creates DOM elements for the products list
     const li = document.createElement('li');
+    const nameH3 = document.createElement('h3');
+    const categoryP = document.createElement('p');
+    const img = document.createElement('img');
+    const descriptionP = document.createElement('p');
+    const priceP = document.createElement('p');
+    const btn = document.createElement('button');
+
+    
     li.classList.add(mealKit.category);
     li.title = mealKit.description;
 
-    //adds name of dish to li
-    const h3 = document.createElement('h3');
-    h3.textContent = mealKit.name;
-    h3.style.textDecoration = 'underline';
-    li.appendChild(h3);
+    //adds name of dish to nameH3
+    nameH3.textContent = mealKit.name;
+    nameH3.style.textDecoration = 'underline';
 
-    //adds type of cuisine to li
-    const categoryP = document.createElement('p');
+    //adds type of cuisine to categoryP
     categoryP.classList.add('cuisine-type');
     categoryP.textContent = `Cusuine Type: ${mealKit.category}`;
-    li.appendChild(categoryP);
 
-    //adds dish image to li
-    const img = document.createElement('img');
+    //adds dish image to img
     img.src = `../assets/${mealKit.image}`;
     img.alt = `${mealKit.name} image`;
-    li.appendChild(img);
 
-    //adds dish description to li
-    const descriptionP = document.createElement('p');
+    //adds dish description to descriptionP
     descriptionP.classList.add('description');
     descriptionP.textContent = `${mealKit.description}`;
-    li.append(descriptionP);
 
-    //adds dish price to li
-    const p = document.createElement('p');
-    p.classList.add('price');
-    p.textContent = `Price: $${mealKit.price.toFixed(2)}`;
+    //adds price to priceP
+    priceP.classList.add('price');
+    priceP.textContent = `Price: $${mealKit.price.toFixed(2)}`;
 
-    //adds "add to cart" button to li
-    const btn = document.createElement('button');
+    //adds add-to-cart-button details to btn
     btn.classList.add('add-to-cart-button');
     btn.textContent = 'Add to Cart';
     btn.value = `${mealKit.id}`;
-    p.append(btn);
-    li.append(p);
+
+    //appends button to priceP
+    priceP.append(btn);
+    //appends meal kit items to products list
+    li.append(nameH3, categoryP, img, descriptionP, priceP);
 
     //adds event listener to add clicked meal kit to cart
     btn.addEventListener('click', () =>{
@@ -51,5 +52,6 @@ export function renderMealKit(mealKit) {
         addItemToCart(mealKit.id);
     });
     
+    //generates the li elements for the products list
     return li;
 }

@@ -59,3 +59,8 @@ export function addItemToCart(mealId) { //takes in a product id as a parameter
     setCart(shoppingCart);
 }
 
+//function that clears shopping cart data from Local Storage
+export function clearCart() {
+    localStorage.clear();
+    location.reload();
+}
