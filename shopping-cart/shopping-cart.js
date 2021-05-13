@@ -44,7 +44,7 @@ orderButton.addEventListener('click', () => {
     
     //redirect user to homepage
     alert('Return to Home Page');
-    window.location.href = "../index.html";
+    window.location.href = '../index.html';
     
 });
 
